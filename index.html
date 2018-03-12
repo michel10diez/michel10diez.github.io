@@ -1,37 +1,226 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Michel Valencia</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yesenia Cuevas Arq.</title>
+	 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/carousel.css">
+	
 </head>
 <body>
-	<section class="hero is-primary is-medium">
-		<div class="hero-head">
-			<header class="nav">
-				<div class="container">
-					<div class="nav-left">
-						<a href="#" class="nav-item">
-							<img src="assets/img/Blog-Cover-image-Fullstack-Highres.jpg" alt="Michel Valencia" class="logo">
-						</a>
-					</div>
-					<div class="nav-right nav-menu">
-						<a href="https://github.com/michel10diez/" target="_blank" class="nav-item">GitHub</a>
-						<a href="#" target="_blank" class="nav-item">Twitter</a>
-						<a href="#" target="_blank" class="nav-item">Instagram</a>
-						<a href="#" target="_blank" class="nav-item">Facebook</a>
-						<span class="nat-item">
-							<a href="https://www.youtube.com" target="_blank" class="button is-primary is-inverted">
-								<span class="icon"><i class="fa fa-youtube"></i></span>
-								<span>Youtube</span>
-							</a>
-						</span>
-					</div>
+	<section class="contenedor__section" id="contener"> 
+    </section>
+
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+		    <img src="/img/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+		    Yesenia Cuevas
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+			    <li class="nav-item active">
+			        <a class="nav-link scroll" href="#home">Inicio<span class="sr-only">(current)</span></a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link scroll" href="#features">Nosotros</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link scroll" href="#services">Servicios</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link scroll" href="#contact">Contact</a>
+			    </li>
+		    </ul>
+		</div>
+		</div>
+	</nav>
+	</header>
+		<!--<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A fuga magni aspernatur nulla eum cum odit rerum dignissimos repudiandae repellendus harum incidunt neque consequatur eos consequuntur cupiditate quasi, porro esse.</div>
+			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Ejercicio de explicación</div>
+			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima molestias quibusdam id magni, modi nobis aperiam officiis, blanditiis laboriosam, cupiditate a, architecto quas quidem necessitatibus cum mollitia vero placeat.</div>
+
+		</div>-->
+	<section class="hero" id="home">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	        <ol class="carousel-indicators">
+	          	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	          	<li data-target="#myCarousel" data-slide-to="1"></li>
+	          	<li data-target="#myCarousel" data-slide-to="2"></li>
+	        </ol>
+	        <div class="carousel-inner">
+	          	<div class="carousel-item active">
+	            	<img class="first-slide" src="img/yesenia-cuevas-carousel2.jpeg" alt="First slide">
+	            	<div class="container">
+	              		<div class="carousel-caption text-left">
+	                		<h1>Example headline.</h1>
+	                		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	                		<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+	              		</div>
+	            	</div>
+	          	</div>
+	          	<div class="carousel-item">
+	            	<img class="second-slide" src="img/yesenia-cuevas-carousel-01234.jpeg" alt="Second slide">
+	            	<div class="container">
+	              		<div class="carousel-caption">
+	                		<h1>Another example headline.</h1>
+	                		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	                		<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+	              		</div>
+	            	</div>
+	          	</div>
+	          	<div class="carousel-item">
+	            	<img class="third-slide" src="img/yesenia-cuevas-design.jpeg" alt="Third slide">
+	            	<div class="container">
+	              		<div class="carousel-caption text-right">
+	                		<h1>One more for good measure.</h1>
+	                		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	                		<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+	              		</div>
+	            	</div>
+	          	</div>
+	        </div>
+	        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+	          	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	          	<span class="sr-only">Previous</span>
+	        </a>
+	        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+	          	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	          	<span class="sr-only">Next</span>
+	        </a>
+	    </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Alguna descripción</h2>
 				</div>
-			</header>
+			</div>
 		</div>
 	</section>
+	<section class="features" id="features">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 features-about">
+					<img class="foto" src="img/yeseniaCuevasArq.jpeg" width="100%" height="100%" alt="">
+				</div>
+				<div class="col-md-7 features-about">
+					<h3>	
+							Sobre mí
+					</h3>
+					<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloribus, veritatis ipsa placeat assumenda, nisi sed, exercitationem sapiente incidunt nam voluptatibus nostrum cumque harum. Expedita dicta numquam cupiditate pariatur placeat.
+					</p>
+				</div>			
+			</div>
+			<div class="row">
+				<div class="col-md-4 features-icon">
+					<i class="flaticon-maletin"></i>
+					<h3>Descripción corta</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="col-md-4 features-icon">
+					<i class="flaticon-contorno-de-casa"></i>
+					<h3>Descripción corta</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="col-md-4 features-icon">
+					<i class="flaticon-reloj"></i>
+					<h3>Descripción corta</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<div class="container">
+		<h1 class="mb-5 display-4 title">Servicios</h1>
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<div class="card bg-info">
+						<div class="card-header bg-primary text-white">
+						Basico
+						</div>
+						<p class="card-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum, iste vitae porro odio laboriosam. Porro ullam omnis tenetur quos accusamus iusto ipsa sunt dolores odit repudiandae? Quod, nam voluptatem.
+						Aalor Porro ullam omnis</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-secondary">
+						<div class="card-header bg-danger text-white">
+						Completo
+						</div>
+						<p class="card-body bg-secondary text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium totam suscipit, eos illum doloremque vitae qui possimus ratione, libero harum id. Facilis asperiores porro rerum expedita consequatur exercitationem. Aut, voluptate!</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-info">
+						<div class="card-header bg-primary text-white">
+						Más Popular
+						</div>
+						<p class="card-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit accusantium deserunt excepturi quidem, tempore sapiente vitae eum debitis esse minima amet beatae praesentium neque officiis saepe mollitia laudantium consequatur placeat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacto" id="contacto">
+		<div class="contact" id="contact">
+			<div class="split left">
+				<h1 class="title-split">Construcción</h1>
+				<a href="" class="button btn btn-outline-info">Leer más</a>
+			</div>
+			<div class="split right">
+				<h1 class="title-split">Diseño</h1>
+				<a href="" class="button btn btn-outline-info">Leer más</a>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section>
+		<footer class="footer-web">
+			<div class="container">
+				<div class="row content-footer">
+					<div class="col-md-4">
+						<p class="copy">&copy; Michel Valencia Todos los derechos </p>
+					</div>
+					<div class="col-md-4">
+						<p>Tel: (443)-100-8428</p>
+					</div>
+					<div class="col-md-4">
+						<div class="social">
+                            <a href="#" class="icon-facebook"></a>
+                            <a href="#" class="icon-twitter"></a>
+                            <a href="#" class="icon-google"></a>
+                            <a href="#" class="icon-linkedin2"></a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+	<script src="js/active-nav.js" language="JavaScript" type ="text/javascript">		
+	</script>
+	<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+	 <script src="js/bootstrap.min.js"></script>
+	 <script src="js/holder.min.js"></script>
+	<script src="js/split.js" language="JavaScript" type ="text/javascript">		
+	</script>
+	<script src="js/img-about.js"></script>
 </body>
 </html>
